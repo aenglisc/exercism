@@ -55,6 +55,7 @@ export default class PerfectNumbers {
     // in progress
     if (isOddAbundant(num)) { return 'abundant'; }
 
+    // very inefficient for large numbers
     const iterClassify = (div, sum) => {
       if (num === div) {
         if (num === sum) { return 'perfect'; }
